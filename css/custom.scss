@@ -1,0 +1,184 @@
+@import url("https://use.typekit.net/bso1ttx.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: agenda, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// Rest of code
+
+// .bg__image {
+//     width: 100vw;
+//     height: 1000px;
+//     position: absolute;
+//     background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     filter: brightness(0.3);
+// }
+
+header {
+    &.nav__container {
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+
+        .navbar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            padding: 40px 80px;
+
+            #navbar__logo {
+                width: 200px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .menu__toggle .bar { // Do not move this area
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background: white;
+            }
+
+            .nav__menu {
+                grid-column: 2;
+                grid-row: 1;
+                align-self: center;
+                justify-self: end;
+
+                :not(:last-child) {
+                    padding-right: 40px;
+                }
+
+                .nav__links {
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    transition: all 0.2s ease-out;
+                }
+           }
+        }
+    }
+}
+
+main {
+    &.head__container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 220px 80px 100px;
+        color: white;
+
+        // Photo by "https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" Florian Olivo on "https://unsplash.com/s/photos/gamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+
+        background-image: url('../assets/bg-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .head__info {
+            grid-column: 1;
+            grid-row: 1;
+
+            h1 {
+                width: 60%;
+                font-size: 4em;
+            }
+
+            p {
+                width: 90%;
+                text-align: justify;
+                font-weight: 300;
+                font-size: 1.3em;
+                line-height: 40px;
+            }
+        }
+
+        .head__form {
+            width: 70%;
+            justify-self: flex-end;
+            grid-column: 2;
+            grid-row: 1;
+            color: black;
+            background-color: white;
+            
+            form {
+                width: 100%;
+                display: block;
+                padding: 20px 50px 90px;
+
+                .form__title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    h2 {
+                        font-size: 2em;
+                    }
+                }
+
+                .form__content {
+                    width: 100%;
+
+                    p {
+                        font-size: 1.2em;
+                        margin: 20px 0;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                    }
+                }
+
+                .form__extra {
+                    width: 100%;
+                    display: flex;
+                    padding: 10px 0;
+                }
+
+                .form__submit {
+                    width: 100%;
+                    
+                    button {
+                        width: 100%;
+                        height: 60px;
+                        color: white;
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        background-color: brown;
+                        border: none;
+                        
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

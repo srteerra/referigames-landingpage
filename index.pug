@@ -4,26 +4,38 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet" href="https://use.typekit.net/bso1ttx.css")
+
         title Referigames
     body
-        div(class='bg__image')
-            img(src="", alt="background")
-        header 
-            div 
-                img(src="/", alt="Logo")
-            nav 
-                ul 
-                    li Inicio
-                    li Conocenos
-                    li Galeria
-                    li Contacto
+        header(class="nav__container")
+            nav(class="navbar")
+                a(href="/")
+                    img(src="./assets/white-main.png", id="navbar__logo")
+                div(class="menu__toggle", id="mobile__menu")
+                    span(class="bar")
+                    span(class="bar")
+                    span(class="bar")
+                ul(class="nav__menu")
+                    l1
+                        a(href="/", class="nav__links") Inicio
+                    l1
+                        a(href="/", class="nav__links") Conocenos
+                    l1
+                        a(href="/", class="nav__links") Galeria
+                    l1
+                        a(href="/", class="nav__links") Contacto
         main(class='head__container')
             div(class='head__info')
-                h1 Title
+                h1 AQUI VA UN FORMULARIO
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad reiciendis a enim accusantium placeat eaque labore dolorum maiores. Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
+                p Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
             div(class='head__form')
                 form(action="", method="POST")
                     div(class='form__title')
-                        h2 Subscribe!
+                        h2 Suscribete!
                     div(class='form__content')
                         p Level 1 
                         input(type="text" name='level-1')
@@ -35,4 +47,5 @@ html(lang="en")
                         input(type="checkbox", name="lvl")
                         p Accept terms and conditions
                     div(class='form__submit')
-                        input(type="button", value="Submit")
+                        button(type="submit") Enviar
+        script(src="./js/index.js")

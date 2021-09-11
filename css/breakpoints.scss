@@ -1,0 +1,126 @@
+@media screen and (max-width: 1500px) {
+    main {
+        &.head__container {
+            .head__form {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        &.head__container {
+            .head__form {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        &.head__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 220px 80px 100px;
+            color: white;
+
+            .head__info {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .head__form {
+                width: 100%;
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        &.nav__container {
+            display: flex;
+            z-index: 1;
+
+            .navbar {
+                width: 100%;
+                padding: 30px 80px;
+                background-color: black;
+
+                .menu__toggle
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .bar {
+                    display: block;
+                    cursor: pointer;
+                }
+
+                #mobile__menu {
+                    position: absolute;
+                    top: 30%;
+                    right: 10%;
+                    transform: translate(5%, 20%);
+
+                    &.is-active .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &.is-active .bar:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+
+                    &.is-active .bar:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+
+                .nav__menu {
+                    display: grid;
+                    grid-template-columns: auto;
+                    margin: 0;
+                    width: 100%;
+                    background-color: black;
+                    position: absolute;
+                    top: 120px;
+                    left: -100%;
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                    z-index: -1;
+
+                    :not(:last-child) {
+                        padding-right: 0;
+                    }
+
+                    &.active {
+                        left: 0;
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                        padding: 0;
+                    }
+
+                    .nav__links {
+                        width: 100%;
+                        display: table;
+                        text-align: center;
+                        line-height: 80px;
+                        padding: 5px 0;
+
+                        &:not(:last-child) {
+                            padding-right: 0;
+                        }
+
+                        &:hover {
+                            transition: all 0.4s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
