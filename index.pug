@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./css/style.css")
         link(rel="stylesheet" href="https://use.typekit.net/bso1ttx.css")
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.3/css/all.css' integrity='sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk' crossorigin='anonymous')
 
         title Referigames
     body
@@ -35,7 +36,7 @@ html(lang="en")
             div(class='head__form')
                 form(action="", method="POST")
                     div(class='form__title')
-                        h2 Suscribete!
+                        h2 !Suscribete!
                     div(class='form__content')
                         p Level 1 
                         input(type="text" name='level-1')
@@ -48,4 +49,21 @@ html(lang="en")
                         p Accept terms and conditions
                     div(class='form__submit')
                         button(type="submit") Enviar
+        section(class='about__container')
+            h1 Conocenos
+            div(class='about__info')
+                div(class='info__block')
+                    h2 ¿Que es Referigames?
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus et saepe omnis nisi adipisci fugiat hic officia ipsam enim voluptas, quas, at inventore eum obcaecati labore! Ab, delectus rerum.
+            div(class='about__info')
+                div(class='info__block')
+                    span 
+                        i(class='fas fa-building') 
+                            span Vision
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus et saepe omnis nisi adipisci fugiat hic officia ipsam enim voluptas, quas, at inventore eum obcaecati labore! Ab, delectus rerum.
+            div(class='about__info')
+                div(class='info__block')
+                    span 
+                        i(class='fas fa-bullseye')  Mision
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus et saepe omnis nisi adipisci fugiat hic officia ipsam enim voluptas, quas, at inventore eum obcaecati labore! Ab, delectus rerum.
         script(src="./js/index.js")

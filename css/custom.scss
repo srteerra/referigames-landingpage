@@ -137,6 +137,7 @@ main {
                     justify-content: center;
 
                     h2 {
+                        color: gray;
                         font-size: 2em;
                     }
                 }
@@ -152,6 +153,15 @@ main {
                     input {
                         width: 100%;
                         height: 40px;
+                        font-size: 1em;
+                        padding-left: 10px;
+                        transition: ease-out 0.2s;
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid red;
+                            box-shadow: 0 0 10px red;
+                        }
                     }
                 }
 
@@ -170,7 +180,7 @@ main {
                         color: white;
                         font-size: 1.3em;
                         font-weight: 600;
-                        background-color: brown;
+                        background-color: red;
                         border: none;
                         
                         &:hover {
@@ -178,6 +188,64 @@ main {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+section.about__container {
+    width: 100%;
+    height: auto;
+    padding: 60px 80px;
+
+    h1 {
+        font-size: 6em;
+        color: red;
+    }
+
+    .about__info {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 50px 100px;
+
+        h2 {
+            font-size: 3em;
+            font-weight: 700;
+            color: red;
+        }
+
+        span {
+            i {
+                font-size: 3em;
+                color: red;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        &:nth-of-type(1) {
+            .info__block {
+                grid-column: 1-2;
+                text-align: justify;
+            }
+        }
+
+        &:nth-of-type(2) {
+            .info__block {
+                grid-column: 1;
+            }
+        }
+
+        &:last-of-type {
+            .info__block {
+                grid-column: 2;
+                text-align: end;
             }
         }
     }
