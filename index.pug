@@ -28,27 +28,18 @@ html(lang="en")
                     l1
                         a(href="/", class="nav__links") Contacto
         main(class='head__container')
-            div(class='head__info')
+            div(class='head__title')
                 h1 AQUI VA UN FORMULARIO
+            div(class='head__form')
+                form(action="", method="POST")
+                    div(class='form__content')
+                        input(type="email", name='level-1', placeholder='Ingresa tu correo electronico...')
+                    div(class='form__submit')
+                        button(type="submit") Enviar
+            div(class='head__info')
                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad reiciendis a enim accusantium placeat eaque labore dolorum maiores. Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
                 p Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
-            div(class='head__form')
-                form(action="", method="POST")
-                    div(class='form__title')
-                        h2 !Suscribete!
-                    div(class='form__content')
-                        p Level 1 
-                        input(type="text" name='level-1')
-                        p Level 2
-                        input(type="text" name='level-2')
-                        p Level 3 
-                        input(type="text" name='level-3')
-                    div(class='form__extra')
-                        input(type="checkbox", name="lvl")
-                        p Accept terms and conditions
-                    div(class='form__submit')
-                        button(type="submit") Enviar
         section(class='about__container')
             h1 Conocenos
             div(class='about__info')

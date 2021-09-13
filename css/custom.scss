@@ -88,9 +88,9 @@ main {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        padding: 220px 80px 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        padding: 220px 80px 250px;
         color: white;
 
         // Photo by "https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" Florian Olivo on "https://unsplash.com/s/photos/gamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -100,12 +100,15 @@ main {
         background-size: cover;
         background-position: center;
 
-        .head__info {
+        .head__title {
+            width: 70%;
+            justify-self: center;
+            text-align: center;
             grid-column: 1;
             grid-row: 1;
 
             h1 {
-                width: 60%;
+                width: 100%;
                 font-size: 4em;
             }
 
@@ -120,30 +123,23 @@ main {
 
         .head__form {
             width: 70%;
-            justify-self: flex-end;
-            grid-column: 2;
-            grid-row: 1;
+            justify-self: center;
+            grid-column: 1;
+            grid-row: 2;
             color: black;
             background-color: white;
             
             form {
                 width: 100%;
-                display: block;
-                padding: 20px 50px 90px;
-
-                .form__title {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-
-                    h2 {
-                        color: gray;
-                        font-size: 2em;
-                    }
-                }
+                height: 100%;
+                display: flex;
+                padding: 0 60px;
 
                 .form__content {
                     width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
 
                     p {
                         font-size: 1.2em;
@@ -152,7 +148,7 @@ main {
 
                     input {
                         width: 100%;
-                        height: 40px;
+                        height: 50px;
                         font-size: 1em;
                         padding-left: 10px;
                         transition: ease-out 0.2s;
@@ -165,20 +161,17 @@ main {
                     }
                 }
 
-                .form__extra {
-                    width: 100%;
-                    display: flex;
-                    padding: 10px 0;
-                }
-
                 .form__submit {
-                    width: 100%;
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
                     
                     button {
                         width: 100%;
-                        height: 60px;
+                        height: 50px;
                         color: white;
-                        font-size: 1.3em;
+                        font-size: 1.2em;
                         font-weight: 600;
                         background-color: red;
                         border: none;
@@ -189,6 +182,14 @@ main {
                     }
                 }
             }
+        }
+
+        .head__info {
+            width: 70%;
+            grid-column: 1;
+            grid-row: 3;
+            justify-self: center;
+            padding-top: 30px;
         }
     }
 }
@@ -220,6 +221,7 @@ section.about__container {
         span {
             i {
                 font-size: 3em;
+                font-weight: 600;
                 color: red;
             }
         }
