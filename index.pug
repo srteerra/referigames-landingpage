@@ -9,7 +9,7 @@ html(lang="en")
         link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.3/css/all.css' integrity='sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk' crossorigin='anonymous')
 
         title Referigames
-    body
+    body(id='top')
         header(class="nav__container")
             nav(class="navbar")
                 a(href="/")
@@ -22,11 +22,11 @@ html(lang="en")
                     l1
                         a(href="/", class="nav__links") Inicio
                     l1
-                        a(href="/", class="nav__links") Conocenos
+                        a(href="#about", class="nav__links") Conocenos
                     l1
-                        a(href="/", class="nav__links") Galeria
+                        a(href="#events", class="nav__links") Galeria
                     l1
-                        a(href="/", class="nav__links") Contacto
+                        a(href="#footer", class="nav__links") Contacto
         main(class='head__container')
             div(class='head__title')
                 h1 AQUI VA UN FORMULARIO
@@ -40,7 +40,7 @@ html(lang="en")
                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad reiciendis a enim accusantium placeat eaque labore dolorum maiores. Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
                 p Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.
-        section(class='about__container')
+        section(class='about__container' id='about')
             h1 Conocenos
             div(class='about__info')
                 div(class='info__block')
@@ -57,7 +57,7 @@ html(lang="en")
                     span 
                         i(class='fas fa-bullseye')  Mision
                     p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus et saepe omnis nisi adipisci fugiat hic officia ipsam enim voluptas, quas, at inventore eum obcaecati labore! Ab, delectus rerum.
-        section(class='events__container')
+        section(class='events__container' id='events')
             div(class='events__head')
                 h1 Events
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut enim et asperiores corrupti, facere amet eligendi recusandae explicabo doloremque? Dignissimos possimus obcaecati corrupti veritatis nobis illum modi hic consequuntur.
@@ -68,4 +68,35 @@ html(lang="en")
                 div(class='grid__item')
                 div(class='grid__item')
                 div(class='grid__item')
+                div(class='grid__item')
+                div(class='grid__item')
+        footer(id='footer')
+            div(class='footer__logo')
+                img(src="./assets/white-icon.png", alt="logo")
+            div(class='footer__links')
+                nav 
+                    ul 
+                        li 
+                            a(href='#about') Conocenos
+                        li 
+                            a(href='#top') Volver arriba
+                        li 
+                            a(href='#events') Eventos
+                        li +00 000 0000
+                        li correoejemplo@gmail.com
+                        li +00 000 0000
+            div(class='footer__social')
+                ul 
+                    li 
+                        a(href='#')
+                            i(class="fab fa-instagram")
+                    li 
+                        a(href='#')
+                            i(class="fab fa-facebook")
+                    li 
+                        a(href='#')
+                            i(class="fab fa-twitter")
+                    li 
+                        a(href='#')
+                            i(class="fab fa-github")
         script(src="./js/index.js")

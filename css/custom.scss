@@ -77,6 +77,10 @@ header {
                     font-size: 1.5em;
                     font-weight: 500;
                     transition: all 0.2s ease-out;
+
+                    &:hover {
+                        color: red;
+                    }
                 }
            }
         }
@@ -176,8 +180,10 @@ main {
                         font-weight: 600;
                         background-color: red;
                         border: none;
+                        transition: ease-in 0.2s;
                         
                         &:hover {
+                            opacity: 70%;
                             cursor: pointer;
                         }
                     }
@@ -258,7 +264,7 @@ section.events__container {
     width: 100%;
     height: auto;
     background-color: black;
-    padding: 50px 150px;
+    padding: 50px 150px 150px;
     color: white;
 
     .events__head {
@@ -270,6 +276,7 @@ section.events__container {
 
         p {
             font-size: 1.5em;
+            text-align: justify;
         }
     }
 
@@ -281,10 +288,90 @@ section.events__container {
         justify-content: space-around;
 
         .grid__item {
-            width: 400px;
-            height: 400px;
+            width: 35vh;
+            height: 35vh;
             margin: 20px;
             background-color: red;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 90px 300px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        grid-row: 1;
+
+        img {
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+
+    .footer__links {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        grid-row: 2;
+
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 0;
+
+                li {
+                    font-size: 1.3em;
+                    padding: 20px;
+
+                    a {
+                        color: white;
+                        transition: ease-out 0.2s;
+                        
+                        &:hover {
+                            color: red;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__social {
+        padding: 10px 0;
+        grid-row: 3;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0;
+
+            li {
+                font-size: 2em;
+                
+                a {
+                    color: white;
+                    transition: ease-out 0.2s;
+                        
+                    &:hover {
+                        opacity: 70%;
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 }

@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Referigames</title>
   </head>
-  <body>
+  <body id="top">
     <header class="nav__container">
       <nav class="navbar"><a href="/"><img src="./assets/white-main.png" id="navbar__logo"></a>
         <div class="menu__toggle" id="mobile__menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
         <ul class="nav__menu">
           <l1><a class="nav__links" href="/">Inicio</a></l1>
-          <l1><a class="nav__links" href="/">Conocenos</a></l1>
-          <l1><a class="nav__links" href="/">Galeria</a></l1>
-          <l1><a class="nav__links" href="/">Contacto</a></l1>
+          <l1><a class="nav__links" href="#about">Conocenos</a></l1>
+          <l1><a class="nav__links" href="#events">Galeria</a></l1>
+          <l1><a class="nav__links" href="#footer">Contacto</a></l1>
         </ul>
       </nav>
     </header>
@@ -41,7 +41,7 @@
         <p>Veritatis fugiat porro dolor ipsam officia laudantium, placeat vel velit nostrum perferendis.</p>
       </div>
     </main>
-    <section class="about__container">
+    <section class="about__container" id="about">
       <h1>Conocenos</h1>
       <div class="about__info">
         <div class="info__block">
@@ -60,7 +60,7 @@
         </div>
       </div>
     </section>
-    <section class="events__container">
+    <section class="events__container" id="events">
       <div class="events__head">
         <h1>Events</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut enim et asperiores corrupti, facere amet eligendi recusandae explicabo doloremque? Dignissimos possimus obcaecati corrupti veritatis nobis illum modi hic consequuntur.</p>
@@ -72,8 +72,33 @@
         <div class="grid__item"></div>
         <div class="grid__item"></div>
         <div class="grid__item"></div>
+        <div class="grid__item"></div>
+        <div class="grid__item"></div>
       </div>
     </section>
+    <footer id="footer">
+      <div class="footer__logo"><img src="./assets/white-icon.png" alt="logo"></div>
+      <div class="footer__links">
+        <nav> 
+          <ul> 
+            <li> <a href="#about">Conocenos</a></li>
+            <li> <a href="#top">Volver arriba</a></li>
+            <li> <a href="#events">Eventos</a></li>
+            <li>+00 000 0000</li>
+            <li>correoejemplo@gmail.com</li>
+            <li>+00 000 0000</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__social">
+        <ul> 
+          <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li> <a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/index.js"></script>
   </body>
 </html>

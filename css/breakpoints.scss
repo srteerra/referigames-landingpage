@@ -3,12 +3,43 @@
         &.head__container {
             .head__title {
                 width: 80%;
+
+                h1 {
+                    width: 100%;
+                    font-size: 3.5em;
+                }
+    
+                p {
+                    width: 90%;
+                    text-align: justify;
+                    font-weight: 300;
+                    font-size: 1em;
+                    line-height: 40px;
+                }
             }
 
             .head__form {
                 width: 80%;
                 form {
                     padding: 0 60px;
+
+                    .form__content {
+    
+                        p {
+                            font-size: 1em;
+                        }
+    
+                        input {
+                            font-size: 0.8em;
+                        }
+                    }
+    
+                    .form__submit {
+
+                        button {
+                            font-size: 1em;
+                        }
+                    }
                 }
             }
 
@@ -40,8 +71,27 @@
     }
 
     section.about__container {
+
+        h1 {
+            font-size: 4em;
+        }
+
         .about__info {
             padding: 50px 50px;
+
+            h2 {
+                font-size: 2em;
+            }
+    
+            span {
+                i {
+                    font-size: 2em;
+                }
+            }
+    
+            p {
+                font-size: 1.4em;
+            }
         }
     }
 }
@@ -99,6 +149,22 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    section.events__container {
+        padding: 50px 150px 150px;
+    
+        .events__head {
+            padding: 20px 0 80px;
+    
+            h1 {
+                font-size: 4em;
+            }
+    
+            p {
+                font-size: 1.3em;
             }
         }
     }
@@ -191,26 +257,27 @@
 
 @media screen and (max-width: 850px) {
     section.about__container {
+
+        h1 {
+            font-size: 4em;
+        }
+        
         .about__info {
             display: block;
             padding: 50px 0;
 
             h2 {
-                font-size: 3em;
-                font-weight: 700;
-                color: red;
+                font-size: 2em;
             }
     
             span {
                 i {
-                    font-size: 3em;
-                    color: red;
+                    font-size: 2em;
                 }
             }
     
             p {
-                font-size: 1.5em;
-                font-weight: 300;
+                font-size: 1.3em;
             }
     
             &:nth-of-type(1) {
@@ -228,6 +295,216 @@
             &:last-of-type {
                 .info__block {
                     text-align: justify;
+                }
+            }
+        }
+    }
+
+    main {
+        &.head__container {
+            .head__title {
+
+                h1 {
+                    font-size: 3.5em;
+                }
+    
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            .head__form {
+
+                form {
+
+                    .form__content {
+    
+                        p {
+                            font-size: 1em;
+                        }
+    
+                        input {
+                            font-size: 0.8em;
+                        }
+                    }
+    
+                    .form__submit {
+
+                        button {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 90px 200px;
+
+        .footer__logo {
+            img {
+                width: 8vw;
+                height: 8vw;
+            }
+        }
+    
+        .footer__links {
+            nav {
+                ul {
+
+                    li {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    
+        .footer__social {
+            ul {
+
+                li {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.about__container {
+        padding: 40px 60px;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        .about__info {
+            display: block;
+            padding: 50px 0;
+
+            h2 {
+                font-size: 1.8em;
+            }
+    
+            span {
+                i {
+                    font-size: 1.8em;
+                }
+            }
+    
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    section.events__container {
+        padding: 50px 60px 150px;
+    
+        .events__head {
+            padding: 20px 0 80px;
+    
+            h1 {
+                font-size: 3em;
+            }
+    
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    main {
+        &.head__container {
+            padding: 220px 60px 250px;
+
+            .head__title {
+                width: 100%;
+
+                h1 {
+                    font-size: 2.5em;
+                }
+    
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            .head__form {
+                width: 100%;
+
+                form {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    padding: 20px 20px;
+
+                    .form__content {
+    
+                        p {
+                            font-size: 1em;
+                        }
+    
+                        input {
+                            font-size: 0.8em;
+                        }
+                    }
+    
+                    .form__submit {
+
+                        button {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+
+            .head__info {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        padding: 90px 50px;
+
+        .footer__logo {
+            img {
+                width: 10vw;
+                height: 10vw;
+            }
+        }
+    
+        .footer__links {
+            nav {
+                ul {
+
+                    li {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    
+        .footer__social {
+            ul {
+
+                li {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    header {
+        &.nav__container {
+    
+            .navbar {
+                padding: 40px 80px;
+    
+                #navbar__logo {
+                    width: 150px;
                 }
             }
         }
